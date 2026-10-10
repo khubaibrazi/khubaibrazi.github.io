@@ -11,12 +11,17 @@
 
   <meta
     name="description"
-    content="Khubaib Razi — Software Engineer focused on AI, backend, full-stack and mobile applications."
+    content="Khubaib Razi is a Lahore-based web developer building responsive business websites, creative portfolios and practical website improvements."
   >
 
   <meta name="author" content="Khubaib Razi">
 
-  <title>Khubaib Razi — Software Engineer</title>
+  <title>Khubaib Razi | Business Websites, Creative Portfolios & Website Fixes</title>
+  <link rel="canonical" href="https://khubaibrazi.github.io/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Khubaib Razi | Website Development & Fixes">
+  <meta property="og:description" content="Business websites, artist portfolios and focused website improvements by a Lahore-based developer.">
+  <meta property="og:url" content="https://khubaibrazi.github.io/">
 
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -4052,6 +4057,69 @@ em {
   }
 
 }
+
+/* Client acquisition additions — use existing editorial palette */
+.client-services-section { background:var(--bg-soft); }
+.client-section-intro { display:grid;grid-template-columns:1.15fr .85fr;gap:60px;align-items:end;margin-bottom:48px; }
+.client-overline { display:block;color:var(--accent);font-size:.68rem;letter-spacing:.15em;text-transform:uppercase;font-weight:800;margin-bottom:20px; }
+.client-section-intro h2 { font-size:clamp(3rem,5.3vw,6.2rem);line-height:.95;letter-spacing:-.065em;max-width:840px; }
+.client-section-intro h2 em,.client-service-card h3 em,.client-case-copy h3 em { color:var(--accent); }
+.client-section-intro > p { max-width:490px;color:var(--text-soft);line-height:1.85;font-size:.93rem; }
+.client-services-grid { display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px; }
+.client-service-card { display:flex;flex-direction:column;min-height:445px;padding:32px;border:1px solid var(--line);background:var(--surface);transition:transform .3s var(--ease),border-color .3s ease; }
+.client-service-card:hover { transform:translateY(-5px);border-color:var(--accent); }
+.client-card-index { color:var(--accent);font-size:.67rem;letter-spacing:.14em;font-weight:800; }
+.client-service-card h3 { font-size:clamp(2rem,2.6vw,3rem);line-height:1.05;letter-spacing:-.045em;margin:32px 0 18px; }
+.client-service-card > p { color:var(--text-soft);font-size:.89rem;line-height:1.75; }
+.client-service-card ul { list-style:none;margin:24px 0 30px;padding:0;display:grid;gap:10px; }
+.client-service-card li { color:var(--text-soft);font-size:.8rem;line-height:1.5; }
+.client-service-card li::before { content:"↗";color:var(--accent);margin-right:9px; }
+.client-card-link { display:flex;justify-content:space-between;align-items:center;gap:12px;margin-top:auto;padding-top:18px;border-top:1px solid var(--line);font-size:.82rem;font-weight:800; }
+.client-card-link:hover { color:var(--accent); }
+.client-process-note { padding-top:28px;color:var(--text-soft);font-size:.85rem;line-height:1.7; }
+.client-process-note strong { color:var(--text); }
+.client-process-note span { margin:0 9px;color:var(--accent); }
+.client-case-study { display:grid;grid-template-columns:1fr 1fr;min-height:475px;margin-bottom:100px;background:var(--surface);border:1px solid var(--line); }
+.client-case-visual { position:relative;display:flex;flex-direction:column;align-items:center;justify-content:center;min-height:475px;padding:34px;overflow:hidden;color:#eae8dd;background:radial-gradient(circle at 38% 35%,#58685a,#1a2824 70%); }
+.case-visual-topline,.case-visual-bottomline { position:absolute;left:30px;right:30px;color:#e8eee8;font-size:.6rem;letter-spacing:.18em;font-weight:700; }
+.case-visual-topline { top:28px; }
+.case-visual-bottomline { bottom:28px; }
+.case-visual-art { font-family:var(--serif);font-size:clamp(8rem,14vw,16rem);line-height:.9;letter-spacing:-.12em; }
+.case-visual-art span { color:#d4bba0; }
+.client-case-visual p { margin-top:15px;font-family:var(--serif);font-style:italic;font-size:1.35rem;letter-spacing:.035em; }
+.client-case-visual p span { margin:0 12px; }
+.client-case-copy { display:flex;flex-direction:column;align-items:start;justify-content:center;padding:clamp(28px,4vw,64px); }
+.client-case-copy h3 { font-size:clamp(2.5rem,4vw,4.6rem);letter-spacing:-.06em;line-height:1; }
+.client-case-copy h3 em { display:block; }
+.client-case-copy > p { margin:25px 0;line-height:1.8;color:var(--text-soft);font-size:.9rem; }
+.case-details { width:100%;display:grid;gap:12px;padding:18px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line); }
+.case-details div { display:grid;grid-template-columns:95px 1fr;gap:16px;font-size:.72rem;line-height:1.5; }
+.case-details strong { color:var(--text); }
+.case-details span { color:var(--text-soft); }
+.case-actions { display:flex;align-items:center;gap:20px;flex-wrap:wrap;margin-top:28px; }
+.client-case-text-link { border-bottom:1px solid var(--line-dark);padding-bottom:4px;font-size:.79rem;font-weight:800; }
+.client-case-text-link:hover { color:var(--accent); }
+.client-contact-note { max-width:640px;margin-top:23px;color:rgba(255,255,255,.76);line-height:1.8;font-size:.94rem; }
+#services,#work,#contact { scroll-margin-top:80px; }
+@media (max-width:1000px) {
+  .client-section-intro { grid-template-columns:1fr;gap:22px; }
+  .client-services-grid { grid-template-columns:1fr 1fr; }
+  .client-services-grid .client-service-card:last-child { grid-column:1/-1;min-height:300px; }
+  .client-case-study { grid-template-columns:1fr; }
+  .client-case-visual { min-height:360px; }
+}
+@media (max-width:640px) {
+  .client-services-grid { grid-template-columns:1fr; }
+  .client-services-grid .client-service-card:last-child { grid-column:auto;min-height:unset; }
+  .client-service-card { min-height:unset;padding:26px; }
+  .client-case-visual { min-height:290px;padding:25px; }
+  .case-visual-art { font-size:8rem; }
+  .client-case-copy { padding:30px 24px; }
+  .client-case-study { margin-bottom:65px; }
+  .case-actions { align-items:flex-start;flex-direction:column; }
+  .client-process-note span { margin:0 3px; }
+  .hero-actions .button { max-width:100%; }
+}
 </style>
 </head>
 
@@ -4089,7 +4157,7 @@ em {
         </li>
 
         <li>
-          <a href="#experience">Experience</a>
+          <a href="#services">Services</a>
         </li>
 
         <li>
@@ -4103,7 +4171,7 @@ em {
       </ul>
 
       <a href="#contact" class="nav-cta">
-        Let's talk
+        Get a quote
         <span>↗</span>
       </a>
 
@@ -4137,8 +4205,8 @@ em {
         Work
       </a>
 
-      <a href="#experience" class="mobile-link">
-        Experience
+      <a href="#services" class="mobile-link">
+        Services
       </a>
 
       <a href="#credentials" class="mobile-link">
@@ -4193,58 +4261,33 @@ em {
 
             <span class="availability-dot"></span>
 
-            Available for software engineering opportunities
+            Available for website projects · Lahore &amp; remote
 
           </div>
 
 
           <h1 class="hero-title">
-
-            <span class="title-line hero-reveal">
-              I build software
-            </span>
-
-            <span class="title-line hero-reveal delay-1">
-              for <em>real-world</em>
-            </span>
-
-            <span class="title-line hero-reveal delay-2">
-              problems.
-            </span>
-
+            <span class="title-line hero-reveal">I build</span>
+            <span class="title-line hero-reveal delay-1"><em>websites</em></span>
+            <span class="title-line hero-reveal delay-2">that work.</span>
           </h1>
 
 
           <p class="hero-description hero-reveal delay-3">
-
-            I'm <strong>Khubaib Razi</strong>, a Software Engineer focused on
-            Artificial Intelligence, backend, full-stack and mobile applications —
-            building practical systems around real business workflows.
-
+            I'm <strong>Khubaib Razi</strong>, a Lahore-based software engineer.
+            I create responsive business websites and creative portfolios, and
+            fix existing sites so visitors can find the information they need
+            and get in touch with confidence.
           </p>
 
 
           <div class="hero-actions hero-reveal delay-4">
-
-            <a href="#work" class="button button-primary">
-
-              <span>Explore my work</span>
-
-              <span class="button-arrow">
-                ↓
-              </span>
-
+            <a href="mailto:khubaibrazi6@gmail.com?subject=Website%20review%20request&amp;body=Hello%20Khubaib%2C%0A%0AMy%20website%20URL%3A%20%0AWhat%20I%20want%20to%20improve%3A%20%0AMy%20timeline%3A%20%0A%0AThank%20you." class="button button-primary">
+              <span>Request a website review</span>
+              <span class="button-arrow">↗</span>
             </a>
-
-            <a
-              href="mailto:khubaibrazi6@gmail.com"
-              class="text-link"
-            >
-              khubaibrazi6@gmail.com ↗
-            </a>
-
+            <a href="#work" class="text-link">See selected work ↗</a>
           </div>
-
 
           <div class="hero-meta hero-reveal delay-5">
 
@@ -4267,7 +4310,7 @@ em {
               </span>
 
               <span class="meta-value">
-                AI · Backend · Full Stack · Mobile
+                Business Sites · Creative Portfolios · Website Fixes
               </span>
 
             </div>
@@ -4393,6 +4436,50 @@ em {
 
     </section>
 
+
+
+    <!-- ==========================================
+         WEBSITE SERVICES
+    =========================================== -->
+    <section id="services" class="section client-services-section" aria-labelledby="services-title">
+      <div class="container">
+        <div class="section-label reveal"><span>00</span> Services</div>
+        <div class="client-section-intro reveal">
+          <div>
+            <span class="client-overline">Practical web development</span>
+            <h2 id="services-title">A better website, <em>without the guesswork.</em></h2>
+          </div>
+          <p>Whether you need one frustrating issue fixed or a complete new website, I start with your goals, agree on the scope, and build around what your visitors actually need.</p>
+        </div>
+
+        <div class="client-services-grid">
+          <article class="client-service-card reveal">
+            <span class="client-card-index">01 / IMPROVE</span>
+            <h3>Website <em>fixes.</em></h3>
+            <p>Clean up unfinished pages, improve mobile layouts, repair navigation and make contact or enquiry paths easier to use.</p>
+            <ul><li>Clear list of agreed fixes</li><li>Responsive and content cleanup</li><li>Fixed-scope quote before work</li></ul>
+            <a href="mailto:khubaibrazi6@gmail.com?subject=Website%20fix%20enquiry&amp;body=Hello%20Khubaib%2C%0A%0AWebsite%20URL%3A%20%0AIssue%20to%20fix%3A%20%0APreferred%20timeline%3A%20" class="client-card-link">Discuss a website fix <span aria-hidden="true">↗</span></a>
+          </article>
+
+          <article class="client-service-card reveal">
+            <span class="client-card-index">02 / CREATE</span>
+            <h3>Business <em>websites.</em></h3>
+            <p>Modern, mobile-friendly pages that explain what you do, present your services clearly, and give potential customers an obvious next step.</p>
+            <ul><li>Landing pages and company websites</li><li>Enquiry and contact integration</li><li>Basic on-page SEO setup</li></ul>
+            <a href="mailto:khubaibrazi6@gmail.com?subject=Business%20website%20enquiry&amp;body=Hello%20Khubaib%2C%0A%0ABusiness%20name%3A%20%0AWhat%20kind%20of%20website%20do%20you%20need%3F%3A%20%0APages%2Ffeatures%3A%20%0ATimeline%3A%20" class="client-card-link">Plan a business website <span aria-hidden="true">↗</span></a>
+          </article>
+
+          <article class="client-service-card reveal">
+            <span class="client-card-index">03 / SHOWCASE</span>
+            <h3>Creative <em>portfolios.</em></h3>
+            <p>Thoughtful portfolio websites for artists, photographers and designers, with space for selected work, project stories and professional contact details.</p>
+            <ul><li>Artworks and project pages</li><li>Exhibitions, about and CV sections</li><li>Responsive image presentation</li></ul>
+            <a href="mailto:khubaibrazi6@gmail.com?subject=Creative%20portfolio%20enquiry&amp;body=Hello%20Khubaib%2C%0A%0AName%20%2F%20creative%20field%3A%20%0AExisting%20portfolio%20or%20social%20profile%3A%20%0APages%2Fartworks%20needed%3A%20%0ATimeline%3A%20" class="client-card-link">Start a portfolio project <span aria-hidden="true">↗</span></a>
+          </article>
+        </div>
+        <p class="client-process-note reveal"><strong>Simple process:</strong> Share your website or brief <span>→</span> receive a clear scope and quote <span>→</span> review the finished work.</p>
+      </div>
+    </section>
 
     <!-- ==========================================
          ABOUT / IDENTITY
@@ -4684,23 +4771,47 @@ em {
 
           <p class="work-intro-text">
 
-            A selection of software, web and mobile projects from my GitHub —
-            ranging from a Flutter logistics prototype to interactive web
-            experiences.
+            Selected real website work and software projects, including a live
+            artist portfolio, frontend concepts and application prototypes.
 
           </p>
 
         </div>
 
 
-        <!-- PROJECT 01 -->
+
+        <!-- LIVE PORTFOLIO CASE STUDY -->
+        <article class="client-case-study reveal" aria-labelledby="takreem-case-title">
+          <div class="client-case-visual" aria-hidden="true">
+            <span class="case-visual-topline">SELECTED PROJECT / ARTIST PORTFOLIO</span>
+            <div class="case-visual-art">T<span>.</span>T</div>
+            <p>Artworks <span>·</span> Exhibitions <span>·</span> Practice</p>
+            <span class="case-visual-bottomline">AN EDITORIAL HOME FOR AN ARTIST'S WORK</span>
+          </div>
+          <div class="client-case-copy">
+            <span class="client-overline">01 / Live website project</span>
+            <h3 id="takreem-case-title">Takreem Tamsal <em>Artist Portfolio</em></h3>
+            <p>A responsive artist website with dedicated artwork pages, exhibitions, an artist statement, CV and contact information — designed to let the artwork and the artist's story lead.</p>
+            <div class="case-details">
+              <div><strong>Built for</strong><span>Independent visual artist</span></div>
+              <div><strong>Focus</strong><span>Portfolio · Content structure · Responsive UI</span></div>
+              <div><strong>Deliverable</strong><span>Live multi-page portfolio website</span></div>
+            </div>
+            <div class="case-actions">
+              <a class="project-action project-action-dark" href="https://takreemtamsal.vercel.app/" target="_blank" rel="noopener noreferrer">View live website <span>↗</span></a>
+              <a class="client-case-text-link" href="mailto:khubaibrazi6@gmail.com?subject=Creative%20portfolio%20enquiry&amp;body=Hello%20Khubaib%2C%0A%0AName%20%2F%20creative%20field%3A%20%0AExisting%20portfolio%20or%20social%20profile%3A%20%0APages%2Fartworks%20needed%3A%20%0ATimeline%3A%20">Build something similar ↗</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- PROJECT 02 -->
 
         <article class="featured-project">
 
           <div class="project-sticky">
 
             <div class="project-index">
-              01 / FEATURED PROJECT
+              02 / SOFTWARE PROJECT
             </div>
 
             <h3>
@@ -5028,7 +5139,7 @@ em {
             <div class="github-card-top">
 
               <span class="github-project-number">
-                02
+                03
               </span>
 
               <span class="github-project-type">
@@ -5120,7 +5231,7 @@ em {
             <div class="github-card-top">
 
               <span class="github-project-number">
-                03
+                04
               </span>
 
               <span class="github-project-type">
@@ -5208,7 +5319,7 @@ em {
             <div class="github-card-top">
 
               <span class="github-project-number">
-                04
+                05
               </span>
 
               <span class="github-project-type">
@@ -6244,21 +6355,23 @@ em {
         <div class="contact-top">
 
           <span class="contact-kicker reveal">
-            Have an opportunity or idea?
+            Tell me about your website
           </span>
 
           <h2 class="contact-heading reveal">
-            Let's build something
-            <em>useful.</em>
+            Let's make your website
+            <em>work better.</em>
           </h2>
 
         </div>
 
 
+        <p class="client-contact-note reveal">Send me your current website link (if you have one), what you need, and your preferred timeline. I’ll reply with next steps and a clearly defined quote.</p>
+
         <div class="contact-main reveal">
 
           <a
-            href="mailto:khubaibrazi6@gmail.com"
+            href="mailto:khubaibrazi6@gmail.com?subject=Website%20review%20request&amp;body=Hello%20Khubaib%2C%0A%0AMy%20website%20URL%3A%20%0AWhat%20I%20want%20to%20improve%3A%20%0AMy%20timeline%3A%20%0A%0AThank%20you."
             class="contact-email"
           >
 
@@ -6330,7 +6443,7 @@ em {
             </span>
 
             <span>
-              AI / Backend / Full Stack / Mobile
+              Business websites / Portfolios / Site fixes
             </span>
 
           </div>
